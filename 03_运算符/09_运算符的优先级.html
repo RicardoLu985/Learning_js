@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>运算符的优先级</title>
+    <script>
+        /*
+            和数学一样，JS中的运算符也有优先级。
+
+            优先级越高，优先执行；
+            优先级相等，从左往右执行。
+            () 拥有最高优先级。
+        
+        */
+
+        let a = 1 + 2 * 3
+            a = 1 && 2 || 3
+            a = 1 && (2 || 3)
+            a = 1 && (3 || 2)
+        console.log(a);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
