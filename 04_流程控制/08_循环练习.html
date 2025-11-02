@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>循环练习</title>
+    <script>
+        /*
+            循环练习
+            -- 练习内容：
+                1. 使用while循环打印1到100的数字。
+                2. 使用for循环打印1到100的数字。
+                3. 使用do...while循环打印1到100的数字。
+                获取3的倍数并对其求和。
+        */
+
+        // 1. 使用while循环打印1到10的数字
+        let i = 1;
+        var count = 0; // 初始化累加器
+        var sum = 0; // 初始化和
+        while (i <= 100) {
+            console.log("while循环第 " + i + " 次：" + i);
+            // 获取3的倍数并对其求和
+            // 如果i是3的倍数，则打印i并累加到sum中
+            if (i % 3 === 0) {
+                console.log("3的倍数：" + i);
+                
+                sum = i + sum || 0; // 累加3的倍数  
+                console.log("3的倍数和：" + sum);
+                count++;
+                console.log("求和次数：" + count);
+            }
+            i++;
+        }
+
+        // // 2. 使用for循环打印1到10的数字
+        // for (let j = 1; j <= 100; j++) {
+        //     console.log("for循环第 " + j + " 次：" + j);
+        // }
+
+        // // 3. 使用do...while循环打印1到10的数字
+        // let k = 1;
+        // do {
+        //     console.log("do...while循环第 " + k + " 次：" + k);
+        //     k++;
+        // } while (k <= 100);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

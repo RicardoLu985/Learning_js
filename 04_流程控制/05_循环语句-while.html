@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>循环语句-while</title>
+    <script>
+        /*
+            循环语句用于重复执行一段代码，直到满足特定条件。
+            -- 常见的循环语句有：
+                1. for循环
+                2. while循环
+                3. do...while循环
+            
+            -- while语句
+                -- 语法：
+                    while (条件表达式) {
+                        语句...
+                    }
+                -- 执行流程：
+                    while语句在执行时，会先对条件表达式进行判断。
+                    如果条件为true，则执行循环体内的语句。
+                    执行完后，再次判断条件表达式。
+                    如果条件仍为true，则继续执行循环体内的语句。
+                    直到条件表达式为false，循环结束。
+        */
+        // 当一个循环的条件永远为true时，就是一个死循环，会一直执行（慎用）。
+        // while (true) {
+        //     let num = +prompt("请输入一个数字（1-10），输入0结束：");
+        //     if (num === 0) {
+        //         alert("循环结束");
+        //         break;  // 当输入0时，终止循环
+        //     } else if (num < 1 || num > 10) {
+        //         alert("请输入1到10之间的数字");
+        //     } else {
+        //         alert("你输入的数字是：" + num);
+        //     }
+        // }
+        /*
+            通常编写一个循环，要有三个条件。
+                1. 循环的初始条件（初始化变量）
+                2. 循环的终止条件（判断变量是否满足条件）
+                3. 循环的迭代条件（更新变量）
+        */
+
+        let i = 1;  // 初始化变量
+        while (i <= 5) {  // 终止条件   
+            alert("这是第 " + i + " 次循环");
+            i++;  // 迭代条件，更新变量
+        }
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

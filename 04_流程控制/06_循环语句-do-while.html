@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>循环语句-do-while</title>
+    <script>
+        /*
+            循环语句用于重复执行一段代码，直到满足特定条件。
+            -- 常见的循环语句有：
+                1. for循环
+                2. while循环
+                3. do...while循环
+            
+            -- do...while语句
+                -- 语法：
+                    do {
+                        语句...
+                    } while (条件表达式);
+                -- 执行流程：
+                    do...while语句会先执行一次循环体内的语句，然后再判断条件表达式。
+                    如果条件为true，则继续执行循环体内的语句。
+                    如果条件为false，则结束循环。
+                -- 与while语句的区别：
+                    do...while语句至少会执行一次循环体内的语句，而while语句可能一次都不执行。
+                    -- 实质的区别：
+                        do...while语句可以确保循环至少执行一次。
+        */
+        
+        let i = 1;  // 初始化变量
+        do {
+            alert("这是第 " + i + " 次循环");
+            i++;  // 更新变量
+        } while (i <= 5);  // 终止条件
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
